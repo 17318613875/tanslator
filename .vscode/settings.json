@@ -1,0 +1,19 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 160,
+  "editor.formatOnSave": true,
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "eslint.packageManager": "yarn",
+  "prettier.jsxBracketSameLine": true,
+  "prettier.packageManager": "yarn",
+  "prettier.printWidth": 80,
+  "files.exclude": {
+    "**/.gitignore": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/package.json": true,
+    "**/yarn.lock": true
+  }
+}
