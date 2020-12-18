@@ -13,7 +13,11 @@
     "**/.gitignore": true,
     "**/build": true,
     "**/dist": true,
-    "**/package.json": true,
+    "**/package.json": false,
+    "**/package-lock.json": true,
     "**/yarn.lock": true
-  }
+  },
+  "editor.snippetSuggestions": "top",
+  "jest.debugMode": true,
+  "jest.pathToJest": "node_modules/.bin/jest"
 }
