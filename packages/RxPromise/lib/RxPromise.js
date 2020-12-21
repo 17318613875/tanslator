@@ -1,6 +1,7 @@
 "use strict";
 import Retry from "./Retry";
 import RetryWhen from "./RetryWhen";
+import Delay from "./Delay";
 
 /**
  * Class RxPromise
@@ -30,5 +31,8 @@ RxPromise.prototype.retry = Retry;
 
 /** @see RetryWhen */
 RxPromise.prototype.retryWhen = RetryWhen;
+
+/** @see Delay */
+RxPromise.prototype.delay = Delay;
 
 export default RxPromise;
