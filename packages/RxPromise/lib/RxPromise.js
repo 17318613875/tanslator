@@ -46,6 +46,4 @@ RxPromise.prototype.debounceTime = DebounceTime;
 /** @see ThrottleTime */
 RxPromise.prototype.throttleTime = ThrottleTime;
 
-Promise = RxPromise;
-
 export default RxPromise;
