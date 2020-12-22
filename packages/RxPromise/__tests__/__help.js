@@ -1,9 +1,4 @@
 import RxPromise from "../lib/RxPromise";
-export function initDelay(callback) {
-  return new RxPromise((resolve, reject) => {
-    resolve(callback);
-  });
-}
 export function initRetry() {
   let account = 0;
   return new RxPromise((resolve, reject) => {
@@ -25,4 +20,14 @@ export function initRetryWhen() {
       account++;
     }, 1 * 1000);
   });
+}
+export function initDelay(callback) {
+  return new RxPromise((resolve, reject) => {
+    resolve(callback);
+  });
+}
+export function initDebounceTime(time) {
+  return new RxPromise((resolve, reject) => {
+    resolve(time);
+  }).debounceTime(time);
 }
