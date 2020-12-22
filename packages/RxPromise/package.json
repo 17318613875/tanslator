@@ -32,7 +32,8 @@
     "test:Retry": "jest __tests__/Retry.test.js --config jest.config.js --verbose --watch",
     "test:RetryWhen": "jest __tests__/RetryWhen.test.js --config jest.config.js --verbose --watch",
     "test:Delay": "jest __tests__/Delay.test.js --config jest.config.js --verbose --watch",
-    "test:DebounceTime": "jest __tests__/DebounceTime.test.js --config jest.config.js --verbose --watch"
+    "test:DebounceTime": "jest __tests__/DebounceTime.test.js --config jest.config.js --verbose --watch",
+    "test:ThrottleTime": "jest __tests__/ThrottleTime.test.js --config jest.config.js --verbose --watch"
   },
   "bugs": {
     "url": "https://github.com/17318613875/tanslator/issues"

@@ -31,3 +31,8 @@ export function initDebounceTime(time) {
     resolve(time);
   }).debounceTime(time);
 }
+export function initThrottleTime(time) {
+  return new RxPromise((resolve, reject) => {
+    resolve(time);
+  }).throttleTime(time);
+}
