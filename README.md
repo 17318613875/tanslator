@@ -8,14 +8,7 @@
 
 ### 魔改 Promise
 
-魔改 Promise 使其支持`重试`/~~`防抖`~~/~~`节流`~~/~~`超时`~~
-
-<details>
-<summary>重试基于次数 .retry(Number)</summary>
-</details>
-<details>
-<summary>重试基于函数 .retryWhen(Function)</summary>
-</details>
+[魔改 Promise 使其支持 `重试`/`防抖`/`节流`/`延时`](./packages/RxPromise/README.md)
 
 ## Usage
 
