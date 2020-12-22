@@ -16,8 +16,7 @@ export function FindStackIndex(stack = "") {
   const stackFile = (stack.match(StackRgex) || []).join(";");
   let index = this.stackPool.findIndex((item) => item[0] === stackFile);
   if (index < 0) {
-    index =
-      this.stackPool.push([stackFile, new Date().getTime(), undefined]) - 1;
+    index = this.stackPool.push([stackFile, 0, undefined]) - 1;
   }
   return index;
 }
