@@ -1,6 +1,9 @@
 "use strict";
-import Retry from "./Retry";
-import RetryWhen from "./RetryWhen";
+import Retry from "./Retry.js";
+import RetryWhen from "./RetryWhen.js";
+import Delay from "./Delay.js";
+import DebounceTime from "./DebounceTime.js";
+import ThrottleTime from "./ThrottleTime";
 
 /**
  * Class RxPromise
@@ -30,5 +33,17 @@ RxPromise.prototype.retry = Retry;
 
 /** @see RetryWhen */
 RxPromise.prototype.retryWhen = RetryWhen;
+
+/** @see Delay */
+RxPromise.prototype.delay = Delay;
+
+/** @description 调用栈存储 */
+RxPromise.prototype.stackPool = [];
+
+/** @see DebounceTime */
+RxPromise.prototype.debounceTime = DebounceTime;
+
+/** @see ThrottleTime */
+RxPromise.prototype.throttleTime = ThrottleTime;
 
 export default RxPromise;

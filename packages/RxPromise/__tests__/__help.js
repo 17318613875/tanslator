@@ -21,3 +21,18 @@ export function initRetryWhen() {
     }, 1 * 1000);
   });
 }
+export function initDelay(callback) {
+  return new RxPromise((resolve, reject) => {
+    resolve(callback);
+  });
+}
+export function initDebounceTime(time) {
+  return new RxPromise((resolve, reject) => {
+    resolve(time);
+  }).debounceTime(time);
+}
+export function initThrottleTime(time) {
+  return new RxPromise((resolve, reject) => {
+    resolve(time);
+  }).throttleTime(time);
+}

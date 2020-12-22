@@ -1,3 +1,4 @@
+import { NUMB_ERROR_TEXT } from "./__help";
 /**
  * Retry Operator
  * @param {Function} onResolveHandle - Resolve Handle
@@ -24,16 +25,19 @@ function RetryOperator(onResolveHandle, onRejectHandle) {
  * @owner RxPromise extends Promise
  */
 function Retry(times = 0) {
-  if (times > 0) {
-    this.times = times;
+  if (typeof second != "number") {
+    throw new Error(NUMB_ERROR_TEXT);
+  }
+  if (times === 0) {
+    return this;
+  } else {
+    this.times = times > 0 ? times : Infinity;
     /** @constructor RxPromise */
     return new this.__proto__.constructor((resolve, reject) => {
       this.then(resolve).catch((err) => {
         RetryOperator.call(this, resolve, reject);
       });
     });
-  } else {
-    return this;
   }
 }
 
