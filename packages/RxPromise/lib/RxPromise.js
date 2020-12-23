@@ -1,8 +1,8 @@
 "use strict";
-import Retry from "./Retry.js";
-import RetryWhen from "./RetryWhen.js";
-import Delay from "./Delay.js";
-import DebounceTime from "./DebounceTime.js";
+import Retry from "./Retry";
+import RetryWhen from "./RetryWhen";
+import Delay from "./Delay";
+import DebounceTime from "./DebounceTime";
 import ThrottleTime from "./ThrottleTime";
 
 /**
