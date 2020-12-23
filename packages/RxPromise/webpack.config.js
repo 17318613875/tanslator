@@ -27,6 +27,11 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
   mode: "production",
   entry: "./lib/RxPromise.js",
+  output: {
+    library: "RxPromise",
+    libraryTarget: "umd",
+    globalObject: "this",
+  },
   plugins: [new webpack.ProgressPlugin()],
 
   module: {
