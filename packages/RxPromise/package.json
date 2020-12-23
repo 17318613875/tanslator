@@ -4,14 +4,16 @@
   "description": "魔改 Promise",
   "keywords": [
     "Promise",
-    "RxJs",
     "retry",
-    "retryWhen"
+    "retryWhen",
+    "delay",
+    "debounceTime",
+    "throttleTime"
   ],
   "author": "彭斌斌 <30690562+17318613875@users.noreply.github.com>",
   "homepage": "https://github.com/17318613875/tanslator#readme",
   "license": "ISC",
-  "main": "lib/RxPromise.js",
+  "main": "dist/main.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
