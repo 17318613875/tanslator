@@ -1,4 +1,5 @@
-require("../dist/main.js");
+const RxPromise = require("../dist/main.js").default;
+Promise = RxPromise;
 
 let oldTime = new Date().getTime();
 const target = new Promise((resolve, reject) => {
