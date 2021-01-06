@@ -1,16 +1,20 @@
 {
-  // 使用 IntelliSense 了解相关属性。 
+  // 使用 IntelliSense 了解相关属性。
   // 悬停以查看现有属性的描述。
   // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch Chrome - Web Component",
+      "request": "launch",
+      "type": "pwa-chrome",
+      "file": "${workspaceFolder}/packages/web-component/public/index.html"
+    },
+    {
       "type": "node",
       "name": "vscode-jest-tests",
       "request": "launch",
-      "args": [
-        "--runInBand"
-      ],
+      "args": ["--runInBand"],
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
